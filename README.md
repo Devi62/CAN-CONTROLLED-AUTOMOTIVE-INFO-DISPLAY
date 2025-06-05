@@ -25,20 +25,20 @@ Key Features:
 
 Functionality Breakdown:
 1. Main Node:
-    *Reads engine temperature using DS18B20 sensor
-    *Retrieves RTC (Real-Time Clock) data
-    *Displays temperature, time, date, and day on LCD
-    *Receives fuel data from Fuel Node and displays fuel percentage
-    *Detects switch press (interrupt) and sends indicator signal to Indicator Node
-    *Displays indicator status on LCD based on feedback
+    * Reads engine temperature using DS18B20 sensor
+    * Retrieves RTC (Real-Time Clock) data
+    * Displays temperature, time, date, and day on LCD
+    * Receives fuel data from Fuel Node and displays fuel percentage
+    * Detects switch press (interrupt) and sends indicator signal to Indicator Node
+    * Displays indicator status on LCD based on feedback
 2. Fuel Node:
-    *Continuously reads analog signal from fuel gauge sensor
-    *Converts signal using on-chip ADC
-    *Sends fuel percentage data to Main Node via CAN
+    * Continuously reads analog signal from fuel gauge sensor
+    * Converts signal using on-chip ADC
+    * Sends fuel percentage data to Main Node via CAN
 3. Indicator Node:
-   *Listens for CAN messages from Main Node
-   *Turns ON/OFF LEDs representing left/right indicators
-   *Helps visualize vehicle signaling behavior
+   * Listens for CAN messages from Main Node
+   * Turns ON/OFF LEDs representing left/right indicators
+   * Helps visualize vehicle signaling behavior
 
 
 
