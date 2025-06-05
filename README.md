@@ -1,7 +1,7 @@
 # CAN-CONTROLLED-AUTOMOTIVE-INFO-DISPLAY
 To design and implement an embedded automotive monitoring system that collects and displays key vehicle parameters—engine temperature, fuel level, and indicator status—using the CAN (Controller Area Network) protocol for reliable and scalable communication between nodes.
 
-⚙️ HARDWRAE REQUIREMENTS:
+⚙️ Hardware Requirements:
 1) LPC 2129
 2) CAN Transceiver (MCP2551)
 3) LEDS
@@ -11,7 +11,7 @@ To design and implement an embedded automotive monitoring system that collects a
 7) Fuel Guage
 8) USB to UART Converter
 
-💻 SOFTWARE REQUIREMENTS:
+💻 Software Requirements:
 1) EMBEDDED C – PROGRAMMING
 2) KEIL-C COMPILER
 3) FLASH MAGIC
@@ -51,9 +51,18 @@ To design and implement an embedded automotive monitoring system that collects a
    * Sends the fuel percentage data to the Main Node over the CAN network.
 
 ✅ Applications:
-1) Vehicle Diagnostics🚗🛠️:The system can be extended to monitor other critical sensors in a vehicle, such as oil pressure, tire pressure, and battery        status, in addition to temperature and fuel level.
-2) Advanced Driver Assistance Systems🚗🔍:This system can be integrated into ADAS to provide real-time information to the driver, improving decision-         making for things like route planning, fuel efficiency, and navigation.
-3) Electric Vehicles (EVs) Monitoring⚡🚗:For electric vehicles (EVs), the system can be used to display battery charge status, along with vehicle            temperature and energy consumption.
+1) Vehicle Diagnostics🚗🛠️:
+   The system can be extended to monitor other critical sensors in a vehicle, such as oil pressure, tire pressure, and battery status, in addition to        temperature and fuel level.
+3) Advanced Driver Assistance Systems🚗🔍:
+   This system can be integrated into ADAS to provide real-time information to the driver, improving decision-making for things like route planning,
+   fuel efficiency, and navigation.
+5) Electric Vehicles (EVs) Monitoring⚡🚗:
+   For electric vehicles (EVs), the system can be used to display battery charge status, along with vehicle temperature and energy consumption.
+   
+📌 Conclusion:
+   The CAN-Controlled Automotive Info Display System effectively monitors key vehicle parameters like engine temperature and fuel level, displaying the 
+   data in real-time on an LCD. By using the CAN protocol for communication between modules, the system enhances vehicle diagnostics and safety,providing    valuable information to the driver.
+
    
 
 
