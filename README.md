@@ -46,6 +46,7 @@ To design and implement an embedded automotive monitoring system that collects a
    Function:
    * Reads the fuel sensor using the ADC (Analog-to-Digital Converter) in the LPC2129.
    * Sends the fuel percentage data to the Main Node over the CAN network.
+
 ✅ Applications:
 
 1) Vehicle Diagnostics🚗🛠️:The system can be extended to monitor other critical sensors in a vehicle, such as oil pressure, tire pressure, and battery        status, in addition to temperature and fuel level.
