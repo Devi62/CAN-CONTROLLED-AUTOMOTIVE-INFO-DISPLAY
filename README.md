@@ -11,18 +11,21 @@ To design and implement an embedded automotive monitoring system that collects a
 7) Fuel Guage
 8) USB to UART Converter
 
-💾 SOFTWARE REQUIREMENTS:
+💻 SOFTWARE REQUIREMENTS:
 1) EMBEDDED C – PROGRAMMING
 2) KEIL-C COMPILER
 3) FLASH MAGIC
+   
+🏗️ System Architecture:
+
+
 
 🔑 Key Features:
 1) Real-Time Monitoring: Displays temperature and fuel level live on an LCD.
 2) CAN-Based Communication: Ensures reliable data exchange between distributed nodes.
 3) Interrupt-Based Control: Uses external switches to activate indicators.
 4) Modular Design: Each node operates independently but communicates through the CAN bus.
-5) RTC Integration: Displays current time, date, and day for added functionality.
-   S ARCHITECTUR:  
+5) RTC Integration: Displays current time, date, and day.  
 
 🔁 working principle:
   The entire system works by connecting three main components or nodes:
@@ -48,7 +51,6 @@ To design and implement an embedded automotive monitoring system that collects a
    * Sends the fuel percentage data to the Main Node over the CAN network.
 
 ✅ Applications:
-
 1) Vehicle Diagnostics🚗🛠️:The system can be extended to monitor other critical sensors in a vehicle, such as oil pressure, tire pressure, and battery        status, in addition to temperature and fuel level.
 2) Advanced Driver Assistance Systems🚗🔍:This system can be integrated into ADAS to provide real-time information to the driver, improving decision-         making for things like route planning, fuel efficiency, and navigation.
 3) Electric Vehicles (EVs) Monitoring⚡🚗:For electric vehicles (EVs), the system can be used to display battery charge status, along with vehicle            temperature and energy consumption.
