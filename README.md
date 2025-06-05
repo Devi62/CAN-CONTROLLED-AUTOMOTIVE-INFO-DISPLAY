@@ -2,14 +2,14 @@
 To design and implement an embedded automotive monitoring system that collects and displays key vehicle parameters—engine temperature, fuel level, and indicator status—using the CAN (Controller Area Network) protocol for reliable and scalable communication between nodes.
 
 HARDWRAE REQUIREMENTS:
-1)LPC 2129
-2)CAN Transceiver (MCP2551)
-3)LEDS
-4)LCD
-5)Switches
-6)DS18B20 Temperature Sensor
-7)Fuel Guage
-8)USB to UART Converter
+1) LPC 2129
+2) CAN Transceiver (MCP2551)
+3) LEDS
+4) LCD
+5) Switches
+6) DS18B20 Temperature Sensor
+7) Fuel Guage
+8) USB to UART Converter
 
 SOFTWARE REQUIREMENTS:
 1) EMBEDDED C – PROGRAMMING
