@@ -60,6 +60,7 @@ To design and implement an embedded automotive monitoring system that collects a
    For electric vehicles (EVs), the system can be used to display battery charge status, along with vehicle temperature and energy consumption.
    
 📌 Conclusion:
+
    The CAN-Controlled Automotive Info Display System effectively monitors key vehicle parameters like engine temperature and fuel level, displaying the 
    data in real-time on an LCD. By using the CAN protocol for communication between modules, the system enhances vehicle diagnostics and safety,providing    valuable information to the driver.
 
