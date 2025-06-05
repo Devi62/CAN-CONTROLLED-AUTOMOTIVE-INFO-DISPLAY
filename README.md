@@ -1,7 +1,7 @@
 # CAN-CONTROLLED-AUTOMOTIVE-INFO-DISPLAY
 To design and implement an embedded automotive monitoring system that collects and displays key vehicle parameters—engine temperature, fuel level, and indicator status—using the CAN (Controller Area Network) protocol for reliable and scalable communication between nodes.
 
-HARDWRAE REQUIREMENTS:
+⚙️HARDWRAE REQUIREMENTS:
 1) LPC 2129
 2) CAN Transceiver (MCP2551)
 3) LEDS
@@ -11,19 +11,19 @@ HARDWRAE REQUIREMENTS:
 7) Fuel Guage
 8) USB to UART Converter
 
-SOFTWARE REQUIREMENTS:
+💾SOFTWARE REQUIREMENTS:
 1) EMBEDDED C – PROGRAMMING
 2) KEIL-C COMPILER
 3) FLASH MAGIC
 
-Key Features:
+🔑Key Features:
 1) Real-Time Monitoring: Displays temperature and fuel level live on an LCD.
 2) CAN-Based Communication: Ensures reliable data exchange between distributed nodes.
 3) Interrupt-Based Control: Uses external switches to activate indicators.
 4) Modular Design: Each node operates independently but communicates through the CAN bus.
 5) RTC Integration: Displays current time, date, and day for added functionality.
 
-Functionality Breakdown:
+🔁 Functionality Breakdown:
 1. Main Node:
     * Reads engine temperature using DS18B20 sensor.
     * Retrieves RTC (Real-Time Clock) data.
