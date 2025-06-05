@@ -17,11 +17,11 @@ SOFTWARE REQUIREMENTS:
 3) FLASH MAGIC
 
 Key Features:
-1)Real-Time Monitoring: Displays temperature and fuel level live on an LCD.
-2)CAN-Based Communication: Ensures reliable data exchange between distributed nodes.
-3)Interrupt-Based Control: Uses external switches to activate indicators.
-4)Modular Design: Each node operates independently but communicates through the CAN bus.
-5)RTC Integration: Displays current time, date, and day for added functionality.
+1) Real-Time Monitoring: Displays temperature and fuel level live on an LCD.
+2) CAN-Based Communication: Ensures reliable data exchange between distributed nodes.
+3) Interrupt-Based Control: Uses external switches to activate indicators.
+4) Modular Design: Each node operates independently but communicates through the CAN bus.
+5) RTC Integration: Displays current time, date, and day for added functionality.
 
 Functionality Breakdown:
 1. Main Node:
