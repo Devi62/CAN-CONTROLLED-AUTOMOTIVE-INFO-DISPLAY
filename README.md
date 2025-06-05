@@ -1,7 +1,7 @@
 # CAN-CONTROLLED-AUTOMOTIVE-INFO-DISPLAY
 To design and implement an embedded automotive monitoring system that collects and displays key vehicle parameters—engine temperature, fuel level, and indicator status—using the CAN (Controller Area Network) protocol for reliable and scalable communication between nodes.
 
-⚙️HARDWRAE REQUIREMENTS:
+⚙️ HARDWRAE REQUIREMENTS:
 1) LPC 2129
 2) CAN Transceiver (MCP2551)
 3) LEDS
@@ -11,34 +11,47 @@ To design and implement an embedded automotive monitoring system that collects a
 7) Fuel Guage
 8) USB to UART Converter
 
-💾SOFTWARE REQUIREMENTS:
+💾 SOFTWARE REQUIREMENTS:
 1) EMBEDDED C – PROGRAMMING
 2) KEIL-C COMPILER
 3) FLASH MAGIC
 
-🔑Key Features:
+🔑 Key Features:
 1) Real-Time Monitoring: Displays temperature and fuel level live on an LCD.
 2) CAN-Based Communication: Ensures reliable data exchange between distributed nodes.
 3) Interrupt-Based Control: Uses external switches to activate indicators.
 4) Modular Design: Each node operates independently but communicates through the CAN bus.
 5) RTC Integration: Displays current time, date, and day for added functionality.
+   S ARCHITECTUR:  
 
-🔁 Functionality Breakdown:
-1. Main Node:
-    * Reads engine temperature using DS18B20 sensor.
-    * Retrieves RTC (Real-Time Clock) data.
-    * Displays temperature, time, date, and day on LCD.
-    * Receives fuel data from Fuel Node and displays fuel percentage.
-    * Detects switch press (interrupt) and sends indicator signal to Indicator Node.
-    * Displays indicator status on LCD based on feedback.
-2. Fuel Node:
-    * Continuously reads analog signal from fuel gauge sensor.
-    * Converts signal using on-chip ADC.
-    * Sends fuel percentage data to Main Node via CAN.
-3. Indicator Node:
-   * Listens for CAN messages from Main Node.
-   * Turns ON/OFF LEDs representing left/right indicators.
-   * Helps visualize vehicle signaling behavior.
+🔁 working principle:
+  The entire system works by connecting three main components or nodes:
+1) Main Node (Central Controller):
+   Role: Collects data from sensors (temperature, fuel) and controls the indicator LEDs. It also displays information on an LCD screen.
+   Functions:
+   * Reads the temperature from the engine using a DS18B20 temperature sensor.
+   * Reads the fuel level from the fuel gauge sensor.
+   * Controls the indicator LEDs based on button presses (left or right indicator).
+   Displays:
+   * Engine temperature
+   * Fuel level (percentage)
+   * Time and date from the RTC (Real-Time Clock) on an LCD screen.
+2) Indicator Node:(Indicator Control)
+   Role: Controls the indicator LEDs (left or right) based on messages received from the Main Node.
+   Function:
+   * Receives CAN messages from the Main Node.
+   * Turns on the left or right indicator LED based on the received signal.
+4) Fuel Node:(Fuel Gauge)
+   Role: Monitors the fuel level and sends this data to the Main Node.
+   Function:
+   * Reads the fuel sensor using the ADC (Analog-to-Digital Converter) in the LPC2129.
+   * Sends the fuel percentage data to the Main Node over the CAN network.
+   Applications:
+ 1)
+   
 
 
+    
+  
 
+ 
