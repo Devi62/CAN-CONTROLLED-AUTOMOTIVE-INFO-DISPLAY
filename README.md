@@ -30,25 +30,25 @@ To design and implement an embedded automotive monitoring system that collects a
 🔁 working principle:
   The entire system works by connecting three main components or nodes:
 1) Main Node (Central Controller):
-   (i)Role: Collects data from sensors (temperature, fuel) and controls the indicator LEDs. It also displays information on an LCD screen.
-   (ii)Functions:
-   * Reads the temperature from the engine using a DS18B20 temperature sensor.
-   * Reads the fuel level from the fuel gauge sensor.
-   * Controls the indicator LEDs based on button presses (left or right indicator).
-   Displays:
-   * Engine temperature
-   * Fuel level (percentage)
-   * Time and date from the RTC (Real-Time Clock) on an LCD screen.
+   * Role: Collects data from sensors (temperature, fuel) and controls the indicator LEDs. It also displays information on an LCD screen.
+   * Functions:
+   (i) Reads the temperature from the engine using a DS18B20 temperature sensor.
+   (ii) Reads the fuel level from the fuel gauge sensor.
+   (iii) Controls the indicator LEDs based on button presses (left or right indicator).
+   * Displays:
+   (i) Engine temperature
+   (ii) Fuel level (percentage)
+   (iii) Time and date from the RTC (Real-Time Clock) on an LCD screen.
 2) Indicator Node:(Indicator Control)
-   (i)Role: Controls the indicator LEDs (left or right) based on messages received from the Main Node.
-   (ii)Functions:
-   * Receives CAN messages from the Main Node.
-   * Turns on the left or right indicator LED based on the received signal.
+   * Role: Controls the indicator LEDs (left or right) based on messages received from the Main Node.
+   * Functions:
+     (i) Receives CAN messages from the Main Node.
+     (ii) Turns on the left or right indicator LED based on the received signal.
 4) Fuel Node:(Fuel Gauge)
-   (i)Role: Monitors the fuel level and sends this data to the Main Node.
-   (ii)Functions:
-   * Reads the fuel sensor using the ADC (Analog-to-Digital Converter) in the LPC2129.
-   * Sends the fuel percentage data to the Main Node over the CAN network.
+   * Role: Monitors the fuel level and sends this data to the Main Node.
+   * Functions:
+     (i) Reads the fuel sensor using the ADC (Analog-to-Digital Converter) in the LPC2129.
+     (ii) Sends the fuel percentage data to the Main Node over the CAN network.
 
 ✅ Applications:
 1) Vehicle Diagnostics🚗🛠️:
