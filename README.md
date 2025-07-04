@@ -57,7 +57,7 @@ To design and implement an embedded automotive monitoring system that collects a
    
 📌 Conclusion:
  
-  The CAN-Controlled Automotive Info Display System effectively monitors key vehicle parameters like engine temperature and fuel level, displaying thedata in real-time on      an LCD. By using the CAN protocol for communication between modules,the system enhances vehicle diagnostics and safety,providing valuable information to the driver.
+   The CAN-Controlled Automotive Info Display System effectively monitors key vehicle parameters like engine temperature and fuel level, displaying thedata in real-time on      an LCD. By using the CAN protocol for communication between modules,the system enhances vehicle diagnostics and safety,providing valuable information to the driver.
 
    
 
