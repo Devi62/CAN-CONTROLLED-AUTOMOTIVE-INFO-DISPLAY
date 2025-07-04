@@ -16,10 +16,6 @@ To design and implement an embedded automotive monitoring system that collects a
 2) KEIL-C COMPILER
 3) FLASH MAGIC
    
-🏗️ System Architecture:
-
-
-
 🔑 Key Features:
 1) Real-Time Monitoring: Displays temperature and fuel level live on an LCD.
 2) CAN-Based Communication: Ensures reliable data exchange between distributed nodes.
